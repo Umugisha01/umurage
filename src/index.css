@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply bg-spiritual-black text-white font-sans antialiased;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-heading font-bold;
+  }
+}
+
+@layer components {
+  .btn-gold {
+    @apply px-8 py-3 bg-gold hover:bg-gold-light text-black font-semibold rounded-full transition-all duration-300 shadow-lg hover:shadow-gold/50 active:scale-95 flex items-center justify-center gap-2;
+  }
+  
+  .section-title {
+    @apply text-4xl md:text-5xl font-bold text-center mb-12 flex flex-col items-center gap-4;
+  }
+  
+  .section-title::after {
+    content: '';
+    @apply w-24 h-1 bg-gold rounded-full;
+  }
+  
+  .card-gold {
+    @apply bg-spiritual-card border border-gold/20 p-6 rounded-2xl hover:border-gold/50 transition-all duration-300;
+  }
+}
+
+.text-gold-gradient {
+  @apply bg-gradient-to-r from-gold via-gold-light to-gold bg-clip-text text-transparent;
+  background-size: 200% auto;
+}
+
+.shine-effect {
+  @apply animate-shine;
+}
