@@ -1,8 +1,9 @@
 import React from 'react';
-import { Calendar, Clock, MapPin, Mic2, Music, Ticket } from 'lucide-react';
+import { Calendar, Clock, MapPin, Mic2, Music, Ticket, CheckCircle2 } from 'lucide-react';
 import { motion } from 'framer-motion';
 
 const EventDetails = () => {
+
     const details = [
         { icon: <Calendar className="w-8 h-8" />, label: "DATE", info: "17th February 2026" },
         { icon: <Clock className="w-8 h-8" />, label: "TIME", info: "18:00 (6:00 PM)" },
@@ -13,7 +14,7 @@ const EventDetails = () => {
     ];
 
     return (
-        <section id="event" className="py-24 bg-spiritual-black text-white border-y border-gold/10">
+        <section id="event" className="py-24 bg-spiritual-black text-white border-y border-gold/10 overflow-hidden">
             <div className="container mx-auto px-6">
                 <motion.div
                     initial={{ opacity: 0, y: 20 }}
@@ -46,6 +47,36 @@ const EventDetails = () => {
                         </motion.div>
                     ))}
                 </div>
+
+                {/* Booking CTA */}
+                <motion.div
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ delay: 0.4 }}
+                    viewport={{ once: true }}
+                    className="mt-20 text-center"
+                >
+                    <div className="bg-gold/5 border border-gold/20 p-8 md:p-12 rounded-[2.5rem] max-w-4xl mx-auto backdrop-blur-sm relative overflow-hidden group">
+                        <div className="absolute top-0 right-0 p-8 opacity-10 group-hover:scale-110 transition-transform duration-700">
+                            <CheckCircle2 className="w-32 h-32 text-gold" />
+                        </div>
+
+                        <h3 className="text-2xl md:text-3xl font-bold mb-6">Want to ensure you don't miss it?</h3>
+                        <p className="text-white/70 text-lg mb-10 max-w-2xl mx-auto font-light">
+                            Schedule this event directly in your calendar.
+                        </p>
+
+                        <a
+                            href="https://calendar.google.com/calendar/appointments/schedules/AcZssZ2bFIbLsFpa5gPCkahDQRdt0BrAoWi25uvuQWcpWdqXvX-PcrwMJDjyk7A9x7zaQgXcPjwK5V7y?gv=true"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="btn-gold !inline-flex !px-12 !py-5 text-xl relative z-10 hover:shadow-gold/40 shadow-2xl"
+                        >
+                            <Calendar className="w-6 h-6" />
+                            BOOK NOW
+                        </a>
+                    </div>
+                </motion.div>
             </div>
         </section>
     );
