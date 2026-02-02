@@ -30,11 +30,15 @@ const Navbar = () => {
 
     return (
         <>
-            <nav className={`fixed top-0 left-0 w-full z-50 transition-all duration-500 ${isScrolled ? 'bg-black/80 backdrop-blur-md py-4 border-b border-gold/10' : 'bg-transparent py-8'
+            <nav className={`fixed top-0 left-0 w-full z-50 transition-all duration-500 ${isScrolled ? 'bg-black/95 backdrop-blur-md py-3 md:py-4 border-b border-gold/10' : 'bg-transparent py-4 md:py-8'
                 }`}>
-                <div className="container mx-auto px-6 flex items-center justify-between">
-                    <a href="#" className="text-2xl font-bold font-heading tracking-tighter">
-                        THE <span className="text-gold">INHERITANCE</span>
+                <div className="container mx-auto px-4 md:px-6 flex items-center justify-between">
+                    <a href="#" className="flex items-center gap-2 md:gap-3 text-lg md:text-2xl font-bold font-heading tracking-tighter">
+                        <img src="/logo.png" alt="Logo" className="h-6 md:h-8 w-auto" />
+                        <div className="flex flex-col md:flex-row md:items-baseline md:gap-2">
+                            <span>THE <span className="text-gold">INHERITANCE</span></span>
+                            <span className="text-[10px] md:text-xs text-white/60 font-medium tracking-widest uppercase -mt-1 md:mt-0">Shalom Family</span>
+                        </div>
                     </a>
 
                     {/* Desktop Nav */}
@@ -55,8 +59,8 @@ const Navbar = () => {
                     </div>
 
                     {/* Mobile Menu Toggle */}
-                    <button className="md:hidden text-gold" onClick={() => setIsMenuOpen(!isMenuOpen)}>
-                        {isMenuOpen ? <X className="w-8 h-8" /> : <Menu className="w-8 h-8" />}
+                    <button className="md:hidden text-gold p-2" onClick={() => setIsMenuOpen(!isMenuOpen)}>
+                        {isMenuOpen ? <X className="w-6 h-6 md:w-8 md:h-8" /> : <Menu className="w-6 h-6 md:w-8 md:h-8" />}
                     </button>
                 </div>
 

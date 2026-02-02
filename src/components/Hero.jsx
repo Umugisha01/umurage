@@ -23,16 +23,16 @@ const Hero = () => {
                     initial={{ opacity: 0, y: -20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.8 }}
-                    className="mb-8"
+                    className="mb-6 md:mb-8"
                 >
-                    <img src="/logo.png" alt="Shalom Family" className="h-16 mx-auto mb-6 opacity-80 hover:opacity-100 transition-opacity" />
+                    <img src="/logo.png" alt="Shalom Family" className="h-12 md:h-16 mx-auto mb-4 md:mb-6 opacity-80 hover:opacity-100 transition-opacity" />
                 </motion.div>
 
                 <motion.h1
                     initial={{ opacity: 0, scale: 0.9 }}
                     animate={{ opacity: 1, scale: 1 }}
                     transition={{ duration: 0.8, delay: 0.2 }}
-                    className="text-6xl md:text-8xl font-heading font-extrabold mb-4 tracking-tighter"
+                    className="text-4xl sm:text-6xl md:text-8xl font-heading font-extrabold mb-4 tracking-tighter leading-tight"
                 >
                     THE <span className="text-gold shine-effect">INHERITANCE</span>
                 </motion.h1>
@@ -41,7 +41,7 @@ const Hero = () => {
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
                     transition={{ duration: 1, delay: 0.5 }}
-                    className="text-xl md:text-2xl font-light mb-8 text-white/90"
+                    className="text-lg sm:text-xl md:text-2xl font-light mb-6 md:mb-8 text-white/90"
                 >
                     Live Album Recording
                 </motion.p>
@@ -50,14 +50,14 @@ const Hero = () => {
                     initial={{ width: 0 }}
                     animate={{ width: '100%' }}
                     transition={{ duration: 1, delay: 0.8 }}
-                    className="h-[2px] bg-gradient-to-r from-transparent via-gold to-transparent mb-8"
+                    className="h-[1px] md:h-[2px] bg-gradient-to-r from-transparent via-gold to-transparent mb-6 md:mb-8"
                 />
 
                 <motion.p
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.8, delay: 1 }}
-                    className="text-lg md:text-xl italic mb-12 text-white/80 leading-relaxed font-light"
+                    className="text-base sm:text-lg md:text-xl italic mb-8 md:mb-12 text-white/80 leading-relaxed font-light px-2"
                 >
                     "The Inheritance is a worship expression calling God's people
                     to remember, receive, and walk in what He has prepared

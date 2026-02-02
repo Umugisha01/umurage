@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 
 const About = () => {
     return (
-        <section id="about" className="py-24 bg-white text-spiritual-black relative overflow-hidden">
+        <section id="about" className="py-16 md:py-24 bg-white text-spiritual-black relative overflow-hidden">
             {/* Background Pattern */}
             <div className="absolute inset-0 opacity-[0.03] pointer-events-none"
                 style={{ backgroundImage: `radial-gradient(circle at 2px 2px, #D4AF37 1px, transparent 0)`, backgroundSize: '40px 40px' }} />
@@ -15,12 +15,12 @@ const About = () => {
                     whileInView={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.8 }}
                     viewport={{ once: true }}
-                    className="section-title text-black"
+                    className="section-title text-black text-3xl md:text-5xl"
                 >
                     ABOUT THE INHERITANCE
                 </motion.div>
 
-                <div className="grid md:grid-cols-2 gap-12 mt-16 text-center md:text-left">
+                <div className="grid md:grid-cols-2 gap-8 md:gap-12 mt-12 md:mt-16 text-center md:text-left">
                     {/* Vision */}
                     <motion.div
                         initial={{ opacity: 0, x: -50 }}
