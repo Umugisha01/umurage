@@ -7,10 +7,10 @@ const Hero = () => {
         <section className="relative h-screen w-full flex items-center justify-center overflow-hidden">
             {/* Background with parallax effect placeholder */}
             <div
-                className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+                className="absolute inset-0 bg-cover bg-center bg-no-repeat transition-transform duration-700 hover:scale-105"
                 style={{
-                    backgroundImage: `url('https://images.unsplash.com/photo-1510915361894-db8b60106cb1?auto=format&fit=crop&q=80')`,
-                    filter: 'brightness(0.4)'
+                    backgroundImage: `url('/hero-bg.jpg')`,
+                    filter: 'brightness(0.3) blur(4px)'
                 }}
             />
 
