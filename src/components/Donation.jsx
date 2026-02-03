@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Landmark, Smartphone, Copy, Check } from 'lucide-react';
+import { Landmark, Smartphone, Copy, Check, Phone } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 
 const Donation = () => {
@@ -28,12 +28,13 @@ const Donation = () => {
             type: "MOBILE MONEY",
             icon: <Smartphone className="w-10 h-10 mb-4 text-gold" />,
             items: [
-                { label: "MTN Mobile Money", value: "+250 783 850 464" },
-                { label: "Names", value: "Emmanuel Shaloom DUSHIME" }
+                { label: "MTN Mobile Money", value: "+250 796 323 149" },
+                { label: "Names", value: "Esther Bien Aimée BARADUKUNDA" }
             ],
-            copyValue: "+250783850464",
+            copyValue: "+250796323149",
             copyLabel: "COPY MOBILE NUMBER",
-            id: "momo"
+            id: "momo",
+            dialCode: "*182*1*1*0796323149#"
         }
     ];
 
@@ -115,6 +116,16 @@ const Donation = () => {
                                     )}
                                 </AnimatePresence>
                             </button>
+
+                            {detail.dialCode && (
+                                <a
+                                    href={`tel:${detail.dialCode}`}
+                                    className="w-full py-4 border border-gold hover:bg-gold hover:text-black transition-all duration-300 rounded-xl flex items-center justify-center gap-3 font-bold mt-4"
+                                >
+                                    <Phone className="w-5 h-5" />
+                                    CALL NOW
+                                </a>
+                            )}
                         </motion.div>
                     ))}
                 </div>
