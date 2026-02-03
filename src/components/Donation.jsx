@@ -34,7 +34,7 @@ const Donation = () => {
             copyValue: "+250796323149",
             copyLabel: "COPY MOBILE NUMBER",
             id: "momo",
-            dialCode: "*182*1*1*0796323149#"
+            dialCode: "*182*1*1*0796323149%23"
         }
     ];
 
