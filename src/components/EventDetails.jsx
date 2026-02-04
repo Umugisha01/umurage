@@ -67,7 +67,7 @@ const EventDetails = () => {
                         </p>
 
                         <a
-                            href="https://calendar.google.com/calendar/appointments/schedules/AcZssZ2bFIbLsFpa5gPCkahDQRdt0BrAoWi25uvuQWcpWdqXvX-PcrwMJDjyk7A9x7zaQgXcPjwK5V7y?gv=true"
+                            href="https://calendar.google.com/calendar/event?action=TEMPLATE&tmeid=NjhwbTRlOWljbGgzY2I5azY5Z2o4YjlrYzloajBiOXA2Y3BqaWJiM2NsaGo0ZTFwY2xnamlwOW42ayBibmVtYWNocmlzdGlhbkBt&tmsrc=bnemachristian%40gmail.com"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="btn-gold !inline-flex !px-12 !py-5 text-xl relative z-10 hover:shadow-gold/40 shadow-2xl"
